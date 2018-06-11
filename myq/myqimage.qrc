@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/loginsource/close.png</file>
+        <file>image/loginsource/closehover.png</file>
+        <file>image/loginsource/closepress.png</file>
+        <file>image/loginsource/login.png</file>
+    </qresource>
+</RCC>

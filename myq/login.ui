@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login</class>
+ <widget class="QWidget" name="login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>427</width>
+    <height>325</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>427</width>
+    <height>325</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>427</width>
+    <height>325</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>myq</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="CustomizeWindowHint">
+    <normaloff>.</normaloff>.</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#login
+{ 
+border-radius:10px;
+background-image: url(:/image/loginsource/login.png);
+}</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>221</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="username">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="placeholderText">
+       <string>请输入账号</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="password">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="inputMethodHints">
+       <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+      <property name="placeholderText">
+       <string>请输入密码</string>
+      </property>
+      <property name="cursorMoveStyle">
+       <enum>Qt::LogicalMoveStyle</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>登陆</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="closebtn">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>10</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-image: url(:/image/loginsource/close.png);
+    background-repeat:no-repeat;
+    border:none;
+}
+QPushButton:hover{
+    background-image: url(:/image/loginsource/closehover.png);
+}
+QPushButton:pressed{
+   	background-image: url(:/image/loginsource/closepress.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
